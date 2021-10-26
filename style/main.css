@@ -107,7 +107,7 @@ li {
 .produkty {
   display: flex;
   flex-direction: column;
-  margin-top: 2vw;
+
 
 }
 
@@ -117,10 +117,12 @@ li {
   text-align: right;
   /*  sprawia że tekst w produktach jest po prawej */
   align-items: center;
+
 }
 
 .produkty-div {
   width: 100%;
+  padding-top: 2vw;
 }
 
 
@@ -165,7 +167,10 @@ li {
 .element>label>img {
   width: 100%;
   padding: 2%;
-  justify-content: center;
+
+  /* testkontrolny */
+  margin-top: 0.2vw;
+  margin-left: 0.2vw;
 }
 
 .element>label {
@@ -189,13 +194,14 @@ li {
 
 /* ///////////////////////// */
 
-
-
-#bur6,
-#bur7,
-#bur8 {
+#burgery {
   display: none;
 }
+
+#kebaby {
+  display: none;
+}
+
 
 /* jeśli chcesz więcej opcji wybooru, zmień szerokość li dla 
 klasy burgeryRow2 i usuń ten element z display none */
