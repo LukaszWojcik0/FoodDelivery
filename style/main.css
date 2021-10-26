@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 60%;
+  margin-left: 20%;
+}
+
+/* ////////////////NAVIGACJA/////////////////// */
+
+.nawigacja {
+  width: 100%;
+  display: flex;
+  height: 5vw;
+  background-color: #f2e852;
+}
+
+#nawigacja-a {
+  width: 5vw;
+}
+
+#nawigacja-img {
+  height: 100%;
+  display: flex;
+}
+
+#nawigacja-p {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+}
+
+/* ////////////////KATEGORIE/////////////////// */
+#kategorie {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 2vw;
+}
+
+.kategorieWybor {
+  padding: 1%;
+  width: 10%;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  background-color: #f2e852;
+  border-radius: 25px;
+
+  /* border: 2px solid black; */
+}
+
+.kategorieLabel {
+  color: black;
+}
+
+/* ////////////////FILTROWANIE/////////////////// */
+
+.filtrowanie {
+  margin-top: 2vw;
+  /* width: 18vw; */
+  width: 25%;
+}
+
+.filtrowanieCena {
+  display: flex;
+  flex-direction: column;
+}
+
+.filtrowanieCena>label {
+  padding: 0.5vw;
+}
+
+/* //////////////////MIEJSCE WYBORU///////////////// */
+
+#miejsceWyboru {
+  margin-left: 0;
+  /* background-color: rgb(0, 225, 255); */
+  /* border: 2px solid black; */
+  /* display: none; */
+}
+
+.test {
+  display: flex;
+  flex-direction: row;
+}
+
+.produkty {
+  border: 2px solid rgba(194, 194, 194, 0.685);
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vw;
+
+}
+
+.produkty>li {
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  /*  sprawia że tekst w produktach jest po prawej */
+  align-items: center;
+}
+
+.produkty-div {
+  width: 100%;
+}
+
+
+.element {
+  background: #f2e852;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+
+  width: 100%;
+}
+
+.element>label>img {
+  width: 100%;
+  padding: 2%;
+}
+
+.element>label {
+  width: 15%;
+  text-decoration: none;
+}
+
+
+
+.element>p {
+  padding: 2%;
+  flex-grow: 1;
+}
+
+#bur5,
+#bur6,
+#bur7,
+#bur8 {
+  display: none;
+}
+
+/* jeśli chcesz więcej opcji wybooru, zmień szerokość li dla 
+klasy burgeryRow2 i usuń ten element z display none */
+.Row2>li {
+  width: 25%;
+}
+
+/* ////////////////////////PIZZA V MAKARON/////////////////////// */
+
+#pizzaMakaron {
+  display: flex;
+}
+
+.wloskieWybor {
+  padding: 2%;
+  width: 50%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f2e852;
+  border: 2px solid black;
+
+  padding: 1%;
+  width: 10%;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  background-color: #f2e852;
+  border-radius: 25px;
+}

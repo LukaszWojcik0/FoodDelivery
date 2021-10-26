@@ -1,0 +1,37 @@
+Burgery
+    -Stinky cheese (cheeseburger)
+    -HAMuwa (hamburger)
+    -tego się nie możesz bać (bardzo ostry)
+    -WEGEtuje (wegetariański)
+    -piatto gustoso (włoski) 
+
+Kebab
+    -w cieście duzy
+    -w cieście maly
+    -w bułce duzy 
+    -w bułce maly
+    -MIĘSki duży (z samym mięsem)
+
+Włoskie
+    Pizza   
+        -4 sery
+        -margaritta 
+        -salami
+        -wiejska
+        -z ananasem
+    Makaron
+        -carbonara
+        -ze szpinakiem
+        -bolonese
+        -z pesto
+        -ravioli
+
+Azjatyckie
+    -Naleśniki ryżowe z krewetkam
+    -Sajgonki
+    -Paluszki krabowe z sezamem
+    -Sałatka warzywna z mięsem
+    -Owoce morza w cieście
+    
+
+
