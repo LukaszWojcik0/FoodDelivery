@@ -46,7 +46,7 @@
           <div class="filtrowanieCena">
             <p class="cena-p">Cena:</p>
             <label for="cena0"
-              ><input type="radio" name="cena" id="cena0" /> Pokaż
+              ><input type="radio" name="cena" id="cena0" checked/> Pokaż
               wszystkie</label
             >
             <label for="cena1"
@@ -68,58 +68,86 @@
           </div>
         </aside>
         <div class="produkty-div">
+          <!-- //////////// Burgery //////////// -->
           <ul id="burgeryRow1" class="produkty Row1">
+            <!-- burger1 -->
             <li id="bur1">
               <div class="element">
                 <label for="bur1"
                   ><img src="pictures/burgery/1.png" alt="bur1"
                 /></label>
-                <p id="bur1">stinky cheese</p> 
-                <p>aaa</p>
-                
+                <section class="element-section">
+                  <p class="produkt-nazwa">stinky cheese</p> 
+                  <p class="produkt-opis">Słynny ametykański cheeseburger... ale zrobiony przez nas. Dużo sera = dużo smaku, prawdziwy stinky cheese</p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">25 zł</p>
+                </section>
               </div>
             </li>
-            <!-- <li id="bur2">
-						<div class="element">
-							<a href="#"><img src="pictures/burgery/1.png" alt="Burger1" />HAMuwa</a>
-						</div>
-					</li>
-					<li id="bur3">
-						<div class="element">
-							<a href="#"><img src="pictures/burgery/1.png" alt="Burger1" />tego się nie możesz bać</a>
-						</div>
-					</li>
-					<li id="bur4">
-						<div class="element">
-							<a href="#"><img src="pictures/burgery/1.png" alt="Burger1" />WEGEtuje</a>
-						</div>
-					</li> -->
+            <!-- burger2 -->
+            <li id="bur2">
+              <div class="element">
+                <label for="bur2"
+                  ><img src="pictures/burgery/1.png" alt="bur2"
+                /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">HAMuwa</p> 
+                  <p class="produkt-opis">Hamburger z soczystym mięsem. i coś jeszcze tu dopisze jak znajde dobre zdjęcie.</p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">20 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- burger3 -->
+					  <li id="bur3">
+              <div class="element">
+                <label for="bur3"
+                  ><img src="pictures/burgery/1.png" alt="bur3"
+                /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">tego się nie możesz bać</p> 
+                  <p class="produkt-opis">To coś dla prawdziwych twardzieli. Burger z ostrymi papryczkami jalapenio!</p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">28 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- burger4 -->
+					  <li id="bur4">
+              <div class="element">
+                <label for="bur4"
+                  ><img src="pictures/burgery/1.png" alt="bur4"
+                /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">wegeTUje</p> 
+                  <p class="produkt-opis">Rozumiemy że nie każdy musi lubić mięso dlatego specjalnie dla tych osób przygotowaliśmy: burgera wege!</p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">30 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- burger5 -->
+            <li id="bur5">
+              <div class="element">
+                <label for="bur5"
+                  ><img src="pictures/burgery/1.png" alt="bur5"
+                /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">piatto gustoso</p> 
+                  <p class="produkt-opis">Burrgerro a'la włosko kuchnijo palce lizać</p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">22 zł</p>
+                </section>
+              </div>
+            </li>
           </ul>
 
-          <!-- <ul id="burgeryRow2" class="produkty Row2">
-					<li id="bur5">
-						<div class="element">
-							<a href="#"><img src="pictures/burgery/1.png" alt="Burger1" />piatto gustoso</a>
-						</div>
-					</li>
-					<li id="bur6">
-						<div class="element">
-							<a href="#"><img src="pictures/burgery/1.png" alt="Burger1" />piatto gustoso</a>
-						</div>
-					</li>
-					<li id="bur7">
-						<div class="element">
-							<a href="#"><img src="pictures/burgery/1.png" alt="Burger1" />piatto gustoso</a>
-						</div>
-					</li>
-					<li id="bur8">
-						<div class="element">
-							<a href="#"><img src="pictures/burgery/1.png" alt="Burger1" />piatto gustoso</a>
-						</div>
-					</li>
-				</ul> -->
-
-          <!-- ////// -->
+          
 
           <!-- ////// -->
 
@@ -338,151 +366,151 @@
       menu4.addEventListener("mouseout", menu4Myszpod, false);
 
       //wyborPizza
-      function wyborPizzanad() {
-        document.querySelector("#pizzaLabel").style.backgroundColor = "#f2e205";
-      }
+      // function wyborPizzanad() {
+      //   document.querySelector("#pizzaLabel").style.backgroundColor = "#f2e205";
+      // }
 
-      function wyborPizzapod() {
-        document.querySelector("#pizzaLabel").style.backgroundColor = "#f2e852";
-      }
+      // function wyborPizzapod() {
+      //   document.querySelector("#pizzaLabel").style.backgroundColor = "#f2e852";
+      // }
 
-      wyborPizza.addEventListener("mouseover", wyborPizzanad, false);
-      wyborPizza.addEventListener("mouseout", wyborPizzapod, false);
+      // wyborPizza.addEventListener("mouseover", wyborPizzanad, false);
+      // wyborPizza.addEventListener("mouseout", wyborPizzapod, false);
       //wyborMakaron
 
-      function wyborMakaronnad() {
-        document.querySelector("#makaronLabel").style.backgroundColor =
-          "#f2e205";
-      }
-      function wyborMakaronpod() {
-        document.querySelector("#makaronLabel").style.backgroundColor =
-          "#f2e852";
-      }
+      // function wyborMakaronnad() {
+      //   document.querySelector("#makaronLabel").style.backgroundColor =
+      //     "#f2e205";
+      // }
+      // function wyborMakaronpod() {
+      //   document.querySelector("#makaronLabel").style.backgroundColor =
+      //     "#f2e852";
+      // }
 
-      wyborMakaron.addEventListener("mouseover", wyborMakaronnad, false);
-      wyborMakaron.addEventListener("mouseout", wyborMakaronpod, false);
+      // wyborMakaron.addEventListener("mouseover", wyborMakaronnad, false);
+      // wyborMakaron.addEventListener("mouseout", wyborMakaronpod, false);
 
       //// zmiana na inną zakładkę po kliknięciu
 
       //default display
-      document.querySelector("#burgeryRow1").style.display = "none";
-      document.querySelector("#burgeryRow2").style.display = "none";
+      // document.querySelector("#burgeryRow1").style.display = "none";
+      // document.querySelector("#burgeryRow2").style.display = "none";
 
-      document.querySelector("#kebabyRow1").style.display = "none";
-      document.querySelector("#kebabyRow2").style.display = "none";
+      // document.querySelector("#kebabyRow1").style.display = "none";
+      // document.querySelector("#kebabyRow2").style.display = "none";
 
-      document.querySelector("#pizzaLabel").style.display = "none";
-      document.querySelector("#makaronLabel").style.display = "none";
+      // document.querySelector("#pizzaLabel").style.display = "none";
+      // document.querySelector("#makaronLabel").style.display = "none";
 
-      document.querySelector("#pizzaRow1").style.display = "none";
-      document.querySelector("#pizzaRow2").style.display = "none";
+      // document.querySelector("#pizzaRow1").style.display = "none";
+      // document.querySelector("#pizzaRow2").style.display = "none";
 
-      document.querySelector("#makaronRow1").style.display = "none";
-      document.querySelector("#makaronRow2").style.display = "none";
+      // document.querySelector("#makaronRow1").style.display = "none";
+      // document.querySelector("#makaronRow2").style.display = "none";
 
-      document.querySelector("#azjatyckieRow1").style.display = "none";
-      document.querySelector("#azjatyckieRow2").style.display = "none";
+      // document.querySelector("#azjatyckieRow1").style.display = "none";
+      // document.querySelector("#azjatyckieRow2").style.display = "none";
 
       //menu1
-      function menu1Click() {
-        document.querySelector("#burgeryRow1").style.display = "flex";
-        document.querySelector("#burgeryRow2").style.display = "flex";
+      // function menu1Click() {
+      //   document.querySelector("#burgeryRow1").style.display = "flex";
+      //   document.querySelector("#burgeryRow2").style.display = "flex";
 
-        document.querySelector("#kebabyRow1").style.display = "none";
-        document.querySelector("#kebabyRow2").style.display = "none";
+      //   document.querySelector("#kebabyRow1").style.display = "none";
+      //   document.querySelector("#kebabyRow2").style.display = "none";
 
-        document.querySelector("#pizzaLabel").style.display = "none";
-        document.querySelector("#makaronLabel").style.display = "none";
-        document.querySelector("#pizzaRow1").style.display = "none";
-        document.querySelector("#pizzaRow2").style.display = "none";
-        document.querySelector("#makaronRow1").style.display = "none";
-        document.querySelector("#makaronRow2").style.display = "none";
+      //   document.querySelector("#pizzaLabel").style.display = "none";
+      //   document.querySelector("#makaronLabel").style.display = "none";
+      //   document.querySelector("#pizzaRow1").style.display = "none";
+      //   document.querySelector("#pizzaRow2").style.display = "none";
+      //   document.querySelector("#makaronRow1").style.display = "none";
+      //   document.querySelector("#makaronRow2").style.display = "none";
 
-        document.querySelector("#azjatyckieRow1").style.display = "none";
-        document.querySelector("#azjatyckieRow2").style.display = "none";
-      }
-      menu1.addEventListener("click", menu1Click, false);
+      //   document.querySelector("#azjatyckieRow1").style.display = "none";
+      //   document.querySelector("#azjatyckieRow2").style.display = "none";
+      // }
+      // menu1.addEventListener("click", menu1Click, false);
 
       //menu2
 
-      function menu2Click() {
-        document.querySelector("#burgeryRow1").style.display = "none";
-        document.querySelector("#burgeryRow2").style.display = "none";
+      // function menu2Click() {
+      //   document.querySelector("#burgeryRow1").style.display = "none";
+      //   document.querySelector("#burgeryRow2").style.display = "none";
 
-        document.querySelector("#kebabyRow1").style.display = "flex";
-        document.querySelector("#kebabyRow2").style.display = "flex";
+      //   document.querySelector("#kebabyRow1").style.display = "flex";
+      //   document.querySelector("#kebabyRow2").style.display = "flex";
 
-        document.querySelector("#pizzaLabel").style.display = "none";
-        document.querySelector("#makaronLabel").style.display = "none";
-        document.querySelector("#pizzaRow1").style.display = "none";
-        document.querySelector("#pizzaRow2").style.display = "none";
-        document.querySelector("#makaronRow1").style.display = "none";
-        document.querySelector("#makaronRow2").style.display = "none";
+      //   document.querySelector("#pizzaLabel").style.display = "none";
+      //   document.querySelector("#makaronLabel").style.display = "none";
+      //   document.querySelector("#pizzaRow1").style.display = "none";
+      //   document.querySelector("#pizzaRow2").style.display = "none";
+      //   document.querySelector("#makaronRow1").style.display = "none";
+      //   document.querySelector("#makaronRow2").style.display = "none";
 
-        document.querySelector("#azjatyckieRow1").style.display = "none";
-        document.querySelector("#azjatyckieRow2").style.display = "none";
-      }
-      menu2.addEventListener("click", menu2Click, false);
+      //   document.querySelector("#azjatyckieRow1").style.display = "none";
+      //   document.querySelector("#azjatyckieRow2").style.display = "none";
+      // }
+      // menu2.addEventListener("click", menu2Click, false);
 
       //menu 3
 
-      function menu3Click() {
-        document.querySelector("#burgeryRow1").style.display = "none";
-        document.querySelector("#burgeryRow2").style.display = "none";
+      // function menu3Click() {
+      //   document.querySelector("#burgeryRow1").style.display = "none";
+      //   document.querySelector("#burgeryRow2").style.display = "none";
 
-        document.querySelector("#kebabyRow1").style.display = "none";
-        document.querySelector("#kebabyRow2").style.display = "none";
+      //   document.querySelector("#kebabyRow1").style.display = "none";
+      //   document.querySelector("#kebabyRow2").style.display = "none";
 
-        document.querySelector("#pizzaLabel").style.display = "flex";
-        document.querySelector("#makaronLabel").style.display = "flex";
+      //   document.querySelector("#pizzaLabel").style.display = "flex";
+      //   document.querySelector("#makaronLabel").style.display = "flex";
 
-        document.querySelector("#azjatyckieRow1").style.display = "none";
-        document.querySelector("#azjatyckieRow2").style.display = "none";
-      }
-      menu3.addEventListener("click", menu3Click, false);
+      //   document.querySelector("#azjatyckieRow1").style.display = "none";
+      //   document.querySelector("#azjatyckieRow2").style.display = "none";
+      // }
+      // menu3.addEventListener("click", menu3Click, false);
 
       //pizza v makaron
-      function pizzaClick() {
-        document.querySelector("#pizzaRow1").style.display = "flex";
-        document.querySelector("#pizzaRow2").style.display = "flex";
+      // function pizzaClick() {
+      //   document.querySelector("#pizzaRow1").style.display = "flex";
+      //   document.querySelector("#pizzaRow2").style.display = "flex";
 
-        document.querySelector("#makaronRow1").style.display = "none";
-        document.querySelector("#makaronRow2").style.display = "none";
-      }
-      document
-        .querySelector("#pizzaLabel")
-        .addEventListener("click", pizzaClick, false);
+      //   document.querySelector("#makaronRow1").style.display = "none";
+      //   document.querySelector("#makaronRow2").style.display = "none";
+      // }
+      // document
+      //   .querySelector("#pizzaLabel")
+      //   .addEventListener("click", pizzaClick, false);
 
-      function makaronClick() {
-        document.querySelector("#pizzaRow1").style.display = "none";
-        document.querySelector("#pizzaRow2").style.display = "none";
+      // function makaronClick() {
+      //   document.querySelector("#pizzaRow1").style.display = "none";
+      //   document.querySelector("#pizzaRow2").style.display = "none";
 
-        document.querySelector("#makaronRow1").style.display = "flex";
-        document.querySelector("#makaronRow2").style.display = "flex";
-      }
-      document
-        .querySelector("#makaronLabel")
-        .addEventListener("click", makaronClick, false);
+      //   document.querySelector("#makaronRow1").style.display = "flex";
+      //   document.querySelector("#makaronRow2").style.display = "flex";
+      // }
+      // document
+      //   .querySelector("#makaronLabel")
+      //   .addEventListener("click", makaronClick, false);
 
       //menu 4
-      function menu4Click() {
-        document.querySelector("#burgeryRow1").style.display = "none";
-        document.querySelector("#burgeryRow2").style.display = "none";
+      // function menu4Click() {
+      //   document.querySelector("#burgeryRow1").style.display = "none";
+      //   document.querySelector("#burgeryRow2").style.display = "none";
 
-        document.querySelector("#kebabyRow1").style.display = "none";
-        document.querySelector("#kebabyRow2").style.display = "none";
+      //   document.querySelector("#kebabyRow1").style.display = "none";
+      //   document.querySelector("#kebabyRow2").style.display = "none";
 
-        document.querySelector("#pizzaLabel").style.display = "none";
-        document.querySelector("#makaronLabel").style.display = "none";
-        document.querySelector("#pizzaRow1").style.display = "none";
-        document.querySelector("#pizzaRow2").style.display = "none";
-        document.querySelector("#makaronRow1").style.display = "none";
-        document.querySelector("#makaronRow2").style.display = "none";
+      //   document.querySelector("#pizzaLabel").style.display = "none";
+      //   document.querySelector("#makaronLabel").style.display = "none";
+      //   document.querySelector("#pizzaRow1").style.display = "none";
+      //   document.querySelector("#pizzaRow2").style.display = "none";
+      //   document.querySelector("#makaronRow1").style.display = "none";
+      //   document.querySelector("#makaronRow2").style.display = "none";
 
-        document.querySelector("#azjatyckieRow1").style.display = "flex";
-        document.querySelector("#azjatyckieRow2").style.display = "flex";
-      }
-      menu4.addEventListener("click", menu4Click, false);
+      //   document.querySelector("#azjatyckieRow1").style.display = "flex";
+      //   document.querySelector("#azjatyckieRow2").style.display = "flex";
+      // }
+      // menu4.addEventListener("click", menu4Click, false);
 
       // console log dla sprawdzenia
       console.log(burger1);
