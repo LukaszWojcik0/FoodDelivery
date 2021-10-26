@@ -20,6 +20,7 @@ li {
 .container {
   width: 60%;
   margin-left: 20%;
+  margin-bottom: 3vw;
 }
 
 /* ////////////////NAVIGACJA/////////////////// */
@@ -45,6 +46,7 @@ li {
   justify-content: center;
   text-align: center;
   width: 80%;
+
 }
 
 /* ////////////////KATEGORIE/////////////////// */
@@ -97,7 +99,7 @@ li {
   /* display: none; */
 }
 
-.test {
+.mitgard {
   display: flex;
   flex-direction: row;
 }
@@ -194,13 +196,13 @@ li {
 
 /* ///////////////////////// */
 
-#burgery {
-  display: none;
+#burgery,
+#kebaby,
+#wloskie,
+#azjatyckie {
+  display: flex;
 }
 
-#kebaby {
-  display: none;
-}
 
 
 /* jeśli chcesz więcej opcji wybooru, zmień szerokość li dla 
@@ -209,9 +211,23 @@ klasy burgeryRow2 i usuń ten element z display none */
   width: 25%;
 }
 
+
+footer {
+  width: 100%;
+  display: flex;
+  height: 3vw;
+  background-color: #f2e852;
+}
+
+#footer-p {
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+
 /* ////////////////////////PIZZA V MAKARON/////////////////////// */
 
-#pizzaMakaron {
+/* #pizzaMakaron {
   display: flex;
 }
 
@@ -232,4 +248,4 @@ klasy burgeryRow2 i usuń ten element z display none */
   text-align: center;
   background-color: #f2e852;
   border-radius: 25px;
-}
+} */
