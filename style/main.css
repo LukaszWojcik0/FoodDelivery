@@ -85,7 +85,7 @@ li {
   flex-direction: column;
 }
 
-.filtrowanieCena > label {
+.filtrowanieCena>label {
   padding: 0.5vw;
 }
 
@@ -110,7 +110,7 @@ li {
   flex-direction: column;
 }
 
-.produkty > li {
+.produkty>li {
   display: flex;
   justify-content: center;
   text-align: right;
@@ -161,7 +161,7 @@ li {
   width: 100%;
 }
 
-.element > label > img {
+.element>label>img {
   width: 100%;
   padding: 2%;
 
@@ -170,7 +170,7 @@ li {
   margin-left: 0.2vw;
 }
 
-.element > label {
+.element>label {
   width: 15%;
   text-decoration: none;
 }
@@ -216,12 +216,16 @@ li {
 }
 
 .dodatki_box-produkty-element {
+  display: flex;
+}
+
+.dodatki_box-produkty-element-zdjecie {
   width: 100px;
   height: 100px;
   background-color: yellowgreen;
 }
 
-.dodatki_box-produkty-opis {
+.dodatki_box-produkty-element-opis {
   width: 100px;
   height: 100px;
   background-color: red;
@@ -241,7 +245,7 @@ li {
 
 /* jeśli chcesz więcej opcji wybooru, zmień szerokość li dla 
 klasy burgeryRow2 i usuń ten element z display none */
-.Row2 > li {
+.Row2>li {
   width: 25%;
 }
 
