@@ -1,556 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FoodDelivery</title>
-    <link rel="stylesheet" href="style/main.css" />
-  </head>
 
-  <body>
-    <section id="dodatki">
-      <div class="dodatki_box">
-        <section class="dodatki_box-produkty"></section>
-        <section class="dodatki-box-podsumowanie"></section>
-      </div>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodDelivery</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
 
-    <main>
-      <nav class="nawigacja">
-        <a href="#" id="nawigacja-a"
-          ><img
-            id="nawigacja-img"
-            src="pictures/logo/logo-placeholder.png"
-            alt="logo"
-        /></a>
-        <a href="#">
-          <p id="nawigacja-p">adres</p>
-        </a>
-      </nav>
-      <div class="container">
-        <div id="miejsceWyboru">
-          <nav id="kategorie">
-            <div class="kategorieWybor" id="menu0">
-              <label class="kategorieLabel" for="wszystkie">Wszystkie</label>
-            </div>
-
-            <div class="kategorieWybor" id="menu1">
-              <label class="kategorieLabel" for="burgery">Burgery</label>
-            </div>
-
-            <div class="kategorieWybor" id="menu2">
-              <label class="kategorieLabel" for="kebaby">Kebaby</label>
-            </div>
-
-            <div class="kategorieWybor" id="menu3">
-              <label class="kategorieLabel" for="wloskie">Włoskie</label>
-            </div>
-
-            <div class="kategorieWybor" id="menu4">
-              <label class="kategorieLabel" for="azjatyckie">Azjatyckie</label>
-            </div>
-          </nav>
-        </div>
-        <div class="mitgard">
-          <aside class="filtrowanie">
-            <div class="filtrowanieCena">
-              <p class="cena-p">Cena:</p>
-              <label for="cena0"
-                ><input type="radio" name="cena" id="cena0" checked /> Pokaż
-                wszystkie</label
-              >
-              <label for="cena1"
-                ><input type="radio" name="cena" id="cena1" /> 15,00 zł lub
-                mniej</label
-              >
-              <label for="cena2"
-                ><input type="radio" name="cena" id="cena2" /> 15,00 zł - 25,00
-                zł</label
-              >
-              <label for="cena3"
-                ><input type="radio" name="cena" id="cena3" /> 25,00 zł - 35,00
-                zł</label
-              >
-              <label for="cena4"
-                ><input type="radio" name="cena" id="cena4" /> 35,00 zł lub
-                więcej</label
-              >
-            </div>
-          </aside>
-          <div class="produkty-div">
-            <!-- //////////// Burgery //////////// -->
-            <ul id="burgery" class="produkty">
-              <!-- burger1 -->
-              <li id="bur1" class="liWybor">
-                <label for="#img-bur1">
-                  <div class="element">
-                    <label for="bur1"
-                      ><img
-                        class="element-zdj"
-                        id="img-bur1"
-                        src="pictures/burgery/1.png"
-                        alt="bur1"
-                    /></label>
-                    <section class="element-section">
-                      <p class="produkt-nazwa">stinky cheese</p>
-                      <p class="produkt-opis">
-                        Słynny amerykański cheeseburger... ale zrobiony przez
-                        nas. Dużo sera = dużo smaku, prawdziwy stinky cheese
-                      </p>
-                    </section>
-                    <section class="element-section2">
-                      <p class="produkt-cena">25 zł</p>
-                    </section>
-                  </div>
-                </label>
-              </li>
-              <!-- burger2 -->
-              <li id="bur2" class="liWybor">
-                <div class="element">
-                  <label for="bur2"
-                    ><img
-                      class="element-zdj"
-                      id="img-bur2"
-                      src="pictures/burgery/1.png"
-                      alt="bur2"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">HAMuwa</p>
-                    <p class="produkt-opis">
-                      Hamburger z soczystym mięsem. i coś jeszcze tu dopisze jak
-                      znajde dobre zdjęcie.
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">20 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- burger3 -->
-              <li id="bur3" class="liWybor">
-                <div class="element">
-                  <label for="bur3"
-                    ><img
-                      class="element-zdj"
-                      id="img-bur3"
-                      src="pictures/burgery/1.png"
-                      alt="bur3"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">tego się nie możesz bać</p>
-                    <p class="produkt-opis">
-                      To coś dla prawdziwych twardzieli. Burger z ostrymi
-                      papryczkami jalapenio!
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">28 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- burger4 -->
-              <li id="bur4" class="liWybor">
-                <div class="element">
-                  <label for="bur4"
-                    ><img
-                      class="element-zdj"
-                      id="img-bur4"
-                      src="pictures/burgery/1.png"
-                      alt="bur4"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">wegeTUje</p>
-                    <p class="produkt-opis">
-                      Rozumiemy że nie każdy musi lubić mięso dlatego specjalnie
-                      dla tych osób przygotowaliśmy: burgera wege!
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">30 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- burger5 -->
-              <li id="bur5" class="liWybor">
-                <div class="element">
-                  <label for="bur5"
-                    ><img
-                      class="element-zdj"
-                      id="img-bur5"
-                      src="pictures/burgery/1.png"
-                      alt="bur5"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">piatto gustoso</p>
-                    <p class="produkt-opis">
-                      Burrgerro a'la włosko kuchnijo palce lizać
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">22 zł</p>
-                  </section>
-                </div>
-              </li>
-            </ul>
-
-            <!-- //////////// Kebaby //////////// -->
-
-            <ul id="kebaby" class="produkty">
-              <!-- kebab1 -->
-              <li id="keb1" class="liWybor">
-                <div class="element">
-                  <label for="keb1"
-                    ><img
-                      class="element-zdj"
-                      id="img-keb1"
-                      src="pictures/kebaby/1.jpg"
-                      alt="keb1"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">w cieście duży</p>
-                    <p class="produkt-opis">opis kebaba w cieście dużego</p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">16 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- kebab2 -->
-              <li id="keb2" class="liWybor">
-                <div class="element">
-                  <label for="keb2"
-                    ><img
-                      class="element-zdj"
-                      id="img-keb2"
-                      src="pictures/kebaby/1.jpg"
-                      alt="keb2"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">kruciutki</p>
-                    <p class="produkt-opis">
-                      kebab w cieście mały na cześć pewnego skrzata
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">12 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- kebab3 -->
-              <li id="keb3" class="liWybor">
-                <div class="element">
-                  <label for="keb3"
-                    ><img
-                      class="element-zdj"
-                      id="img-keb3"
-                      src="pictures/kebaby/1.jpg"
-                      alt="keb3"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">w bułce duży</p>
-                    <p class="produkt-opis">opis kebaba w bułce dużego</p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">18 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- kebab4 -->
-              <li id="keb4" class="liWybor">
-                <div class="element">
-                  <label for="keb4"
-                    ><img
-                      class="element-zdj"
-                      id="img-keb4"
-                      src="pictures/kebaby/1.jpg"
-                      alt="keb4"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">w bułce małego</p>
-                    <p class="produkt-opis">opis kebaba w bułce małego</p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">15 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- kebab5 -->
-              <li id="keb5" class="liWybor">
-                <div class="element">
-                  <label for="keb5"
-                    ><img
-                      class="element-zdj"
-                      id="img-keb5"
-                      src="pictures/kebaby/1.jpg"
-                      alt="keb5"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">MIĘSki</p>
-                    <p class="produkt-opis">
-                      Kebab w cieście z samym mięsem. Po prostu. Po męsku.
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">20 zł</p>
-                  </section>
-                </div>
-              </li>
-            </ul>
-
-            <!-- //////////// Włoskie //////////// -->
-
-            <ul id="wloskie" class="produkty">
-              <!-- wloskie1 -->
-              <li id="wlo1" class="liWybor">
-                <div class="element">
-                  <label for="wlo1"
-                    ><img
-                      class="element-zdj"
-                      id="img-wlo1"
-                      src="pictures/pizze/1.jpg"
-                      alt="wlo1"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">4 sery</p>
-                    <p class="produkt-opis">
-                      opis dla 4 serów troche stinky cheese ale nie do końca
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">20 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- wloskie2 -->
-              <li id="wlo2" class="liWybor">
-                <div class="element">
-                  <label for="wlo2"
-                    ><img
-                      class="element-zdj"
-                      id="img-wlo2"
-                      src="pictures/pizze/1.jpg"
-                      alt="wlo2"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">Margaritta</p>
-                    <p class="produkt-opis">
-                      Jeśli chcesz skomponować swoją własną, wymarzoną pizze to
-                      to jest idealna podstawa pod to.
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">20 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- wloskie3 -->
-              <li id="wlo3" class="liWybor">
-                <div class="element">
-                  <label for="wlo3"
-                    ><img
-                      class="element-zdj"
-                      id="img-wlo3"
-                      src="pictures/pizze/1.jpg"
-                      alt="wlo3"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">Hawajska</p>
-                    <p class="produkt-opis">
-                      Niby wszyscy hateują ale jak zaproponujesz kawałek to
-                      wezmą.
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">20 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- wloskie4 -->
-              <li id="wlo4" class="liWybor">
-                <div class="element">
-                  <label for="wlo4"
-                    ><img
-                      class="element-zdj"
-                      id="img-wlo4"
-                      src="pictures/makarony/carbonara.jpg"
-                      alt="wlo4"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">Carbonara</p>
-                    <p class="produkt-opis">
-                      Carbonara. Nie koniara, zodiakara czy jesieniara.
-                      Carbonara.
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">17 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- wloskie5 -->
-              <li id="wlo5" class="liWybor">
-                <div class="element">
-                  <label for="wlo5"
-                    ><img
-                      class="element-zdj"
-                      id="img-wlo5"
-                      src="pictures/makarony/carbonara.jpg"
-                      alt="wlo5"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">Makaron ze szpinakiem</p>
-                    <p class="produkt-opis">
-                      Dzieci często nie lubią ale według nas jest bardzo dobry i
-                      zdrowy.
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">19 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- wloskie6 -->
-              <li id="wlo6" class="liWybor">
-                <div class="element">
-                  <label for="wlo6"
-                    ><img
-                      class="element-zdj"
-                      id="img-wlo6"
-                      src="pictures/makarony/carbonara.jpg"
-                      alt="wlo6"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">Spaghetti bolognese</p>
-                    <p class="produkt-opis">
-                      Spaghetti jest dobre i smaczne nie wiem losowy opis
-                      zmienie to jeszcze.
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">18 zł</p>
-                  </section>
-                </div>
-              </li>
-            </ul>
-
-            <!-- //////////// Azjatyckie //////////// -->
-
-            <ul id="azjatyckie" class="produkty">
-              <!-- azjatyckie1 -->
-              <li id="azj1" class="liWybor">
-                <div class="element">
-                  <label for="azj1"
-                    ><img
-                      class="element-zdj"
-                      id="img-azj1"
-                      src="pictures/azjatyckie/ramen.jpeg"
-                      alt="azj1"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">Naleśniki ryżowe z krewetkam</p>
-                    <p class="produkt-opis">
-                      Naleśniki. Ryżowe. Z krewetkam. Czego tu można nie
-                      rozumieć.
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">30 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- azjatyckie2 -->
-              <li id="azj2" class="liWybor">
-                <div class="element">
-                  <label for="azj2"
-                    ><img
-                      class="element-zdj"
-                      id="img-azj2"
-                      src="pictures/azjatyckie/ramen.jpeg"
-                      alt="azj2"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">Sajgonki</p>
-                    <p class="produkt-opis">Takie fajne, pyszne 8 sztuk.</p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">16 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- azjatyckie3 -->
-              <li id="azj3" class="liWybor">
-                <div class="element">
-                  <label for="azj3"
-                    ><img
-                      class="element-zdj"
-                      id="img-azj3"
-                      src="pictures/azjatyckie/ramen.jpeg"
-                      alt="azj3"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">Paluszki krabowe z sezamem</p>
-                    <p class="produkt-opis">
-                      Paluszki nie solone albo solone sami zdecydujecie.
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">36 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- azjatyckie4 -->
-              <li id="azj4" class="liWybor">
-                <div class="element">
-                  <label for="azj4"
-                    ><img
-                      class="element-zdj"
-                      id="img-azj4"
-                      src="pictures/azjatyckie/ramen.jpeg"
-                      alt="azj4"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">Sałatka warzywna z mięsem</p>
-                    <p class="produkt-opis">
-                      Zielone czyli zdrowe a do tego mięso. Normalnie jak u
-                      babci.
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">50 zł</p>
-                  </section>
-                </div>
-              </li>
-              <!-- azjatyckie5 -->
-              <li id="azj5" class="liWybor">
-                <div class="element">
-                  <label for="azj5"
-                    ><img
-                      class="element-zdj"
-                      id="img-azj5"
-                      src="pictures/azjatyckie/ramen.jpeg"
-                      alt="azj5"
-                  /></label>
-                  <section class="element-section">
-                    <p class="produkt-nazwa">Owoce morza w cieście</p>
-                    <p class="produkt-opis">
-                      Co to za głupoty przecież w morzu nie ma owoców. Bez
-                      sensu.
-                    </p>
-                  </section>
-                  <section class="element-section2">
-                    <p class="produkt-cena">12 zł</p>
-                  </section>
-                </div>
-              </li>
-            </ul>
+<body>
+  <section id="dodatki">
+    <div class="dodatki_box">
+      <section class="dodatki_box-produkty"></section>
+      <section class="dodatki_box-wybor">
+        <form class="dodatki_4burgery" action="#">
+          <label for="dodatki_bulka">Jaka buła wariacie:
+            <select name="jakaBulaWariacie" id="dodatki_bulka">
+              <option value="">bułka pszenna</option>
+              <option value="">bułka wieloziarnista</option>
+            </select></label>
+          <div class="">
+            <label for="dodatki_mieso">Dodatkowe mięso: <input type="checkbox" name="anyMiecho"
+                id="dodatki_mieso"></label>
+            <label for="dodatki_mieso">(+8,00zł)</label>
           </div>
+          <div>
+            <label for="dodatki_ser">Dodatkowy ser: <input type="checkbox" name="cziiiiz" id="dodatki_ser"></label>
+            <label for="dodatki_ser">(+5,00zł)</label>
+          </div>
+        </form>
+      </section>
+      <section class="dodatki-box-podsumowanie"></section>
+      <section class="dodatki-box-przyciski">
+        <div id="przyciski-wyjdz">wyjdz</div>
+      </section>
+    </div>
+  </section>
+
+  <main>
+    <nav class="nawigacja">
+      <a href="#" id="nawigacja-a"><img id="nawigacja-img" src="pictures/logo/logo-placeholder.png" alt="logo" /></a>
+      <a href="#">
+        <p id="nawigacja-p">adres</p>
+      </a>
+    </nav>
+    <div class="container">
+      <div id="miejsceWyboru">
+        <nav id="kategorie">
+          <div class="kategorieWybor" id="menu0">
+            <label class="kategorieLabel" for="wszystkie">Wszystkie</label>
+          </div>
+
+          <div class="kategorieWybor" id="menu1">
+            <label class="kategorieLabel" for="burgery">Burgery</label>
+          </div>
+
+          <div class="kategorieWybor" id="menu2">
+            <label class="kategorieLabel" for="kebaby">Kebaby</label>
+          </div>
+
+          <div class="kategorieWybor" id="menu3">
+            <label class="kategorieLabel" for="wloskie">Włoskie</label>
+          </div>
+
+          <div class="kategorieWybor" id="menu4">
+            <label class="kategorieLabel" for="azjatyckie">Azjatyckie</label>
+          </div>
+        </nav>
+      </div>
+      <div class="mitgard">
+        <aside class="filtrowanie">
+          <div class="filtrowanieCena">
+            <p class="cena-p">Cena:</p>
+            <label for="cena0"><input type="radio" name="cena" id="cena0" checked /> Pokaż
+              wszystkie</label>
+            <label for="cena1"><input type="radio" name="cena" id="cena1" /> 15,00 zł lub
+              mniej</label>
+            <label for="cena2"><input type="radio" name="cena" id="cena2" /> 15,00 zł - 25,00
+              zł</label>
+            <label for="cena3"><input type="radio" name="cena" id="cena3" /> 25,00 zł - 35,00
+              zł</label>
+            <label for="cena4"><input type="radio" name="cena" id="cena4" /> 35,00 zł lub
+              więcej</label>
+          </div>
+        </aside>
+        <div class="produkty-div">
+          <!-- //////////// Burgery //////////// -->
+          <ul id="burgery" class="produkty">
+            <!-- burger1 -->
+            <li id="bur1" class="liWybor">
+              <label for="#img-bur1">
+                <div class="element">
+                  <label for="bur1"><img class="element-zdj" id="img-bur1" src="pictures/burgery/burger_cheese.png"
+                      alt="bur1" /></label>
+                  <section class="element-section">
+                    <p class="produkt-nazwa">stinky cheese</p>
+                    <p class="produkt-opis">
+                      Słynny amerykański cheeseburger... ale zrobiony przez
+                      nas. Dużo sera = dużo smaku, prawdziwy stinky cheese
+                    </p>
+                  </section>
+                  <section class="element-section2">
+                    <p class="produkt-cena">25 zł</p>
+                  </section>
+                </div>
+              </label>
+            </li>
+            <!-- burger2 -->
+            <li id="bur2" class="liWybor">
+              <div class="element">
+                <label for="bur2"><img class="element-zdj" id="img-bur2" src="pictures/burgery/burger_classic.png"
+                    alt="bur2" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">HAMuwa</p>
+                  <p class="produkt-opis">
+                    Hamburger z soczystym mięsem. i coś jeszcze tu dopisze jak
+                    znajde dobre zdjęcie.
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">20 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- burger3 -->
+            <li id="bur3" class="liWybor">
+              <div class="element">
+                <label for="bur3"><img class="element-zdj" id="img-bur3" src="pictures/burgery/burger_mexican_tofu.png"
+                    alt="bur3" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">tego się nie możesz bać</p>
+                  <p class="produkt-opis">
+                    To coś dla prawdziwych twardzieli. Burger z ostrymi
+                    papryczkami jalapenio!
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">28 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- burger4 -->
+            <li id="bur4" class="liWybor">
+              <div class="element">
+                <label for="bur4"><img class="element-zdj" id="img-bur4" src="pictures/burgery/burger_vege.png"
+                    alt="bur4" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">wegeTUje</p>
+                  <p class="produkt-opis">
+                    Rozumiemy że nie każdy musi lubić mięso dlatego specjalnie
+                    dla tych osób przygotowaliśmy: burgera wege!
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">30 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- burger5 -->
+            <li id="bur5" class="liWybor">
+              <div class="element">
+                <label for="bur5"><img class="element-zdj" id="img-bur5" src="pictures/burgery/burger_pizza.png"
+                    alt="bur5" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">piatto gustoso</p>
+                  <p class="produkt-opis">
+                    Burrgerro a'la włosko kuchnijo palce lizać
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">22 zł</p>
+                </section>
+              </div>
+            </li>
+          </ul>
+
+          <!-- //////////// Kebaby //////////// -->
+
+          <ul id="kebaby" class="produkty">
+            <!-- kebab1 -->
+            <li id="keb1" class="liWybor">
+              <div class="element">
+                <label for="keb1"><img class="element-zdj" id="img-keb1" src="pictures/kebaby/1.jpg"
+                    alt="keb1" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">w cieście duży</p>
+                  <p class="produkt-opis">opis kebaba w cieście dużego</p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">16 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- kebab2 -->
+            <li id="keb2" class="liWybor">
+              <div class="element">
+                <label for="keb2"><img class="element-zdj" id="img-keb2" src="pictures/kebaby/1.jpg"
+                    alt="keb2" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">kruciutki</p>
+                  <p class="produkt-opis">
+                    kebab w cieście mały na cześć pewnego skrzata
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">12 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- kebab3 -->
+            <li id="keb3" class="liWybor">
+              <div class="element">
+                <label for="keb3"><img class="element-zdj" id="img-keb3" src="pictures/kebaby/1.jpg"
+                    alt="keb3" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">w bułce duży</p>
+                  <p class="produkt-opis">opis kebaba w bułce dużego</p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">18 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- kebab4 -->
+            <li id="keb4" class="liWybor">
+              <div class="element">
+                <label for="keb4"><img class="element-zdj" id="img-keb4" src="pictures/kebaby/1.jpg"
+                    alt="keb4" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">w bułce małego</p>
+                  <p class="produkt-opis">opis kebaba w bułce małego</p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">15 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- kebab5 -->
+            <li id="keb5" class="liWybor">
+              <div class="element">
+                <label for="keb5"><img class="element-zdj" id="img-keb5" src="pictures/kebaby/1.jpg"
+                    alt="keb5" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">MIĘSki</p>
+                  <p class="produkt-opis">
+                    Kebab w cieście z samym mięsem. Po prostu. Po męsku.
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">20 zł</p>
+                </section>
+              </div>
+            </li>
+          </ul>
+
+          <!-- //////////// Włoskie //////////// -->
+
+          <ul id="wloskie" class="produkty">
+            <!-- wloskie1 -->
+            <li id="wlo1" class="liWybor">
+              <div class="element">
+                <label for="wlo1"><img class="element-zdj" id="img-wlo1" src="pictures/pizze/1.jpg"
+                    alt="wlo1" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">4 sery</p>
+                  <p class="produkt-opis">
+                    opis dla 4 serów troche stinky cheese ale nie do końca
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">20 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- wloskie2 -->
+            <li id="wlo2" class="liWybor">
+              <div class="element">
+                <label for="wlo2"><img class="element-zdj" id="img-wlo2" src="pictures/pizze/1.jpg"
+                    alt="wlo2" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">Margaritta</p>
+                  <p class="produkt-opis">
+                    Jeśli chcesz skomponować swoją własną, wymarzoną pizze to
+                    to jest idealna podstawa pod to.
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">20 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- wloskie3 -->
+            <li id="wlo3" class="liWybor">
+              <div class="element">
+                <label for="wlo3"><img class="element-zdj" id="img-wlo3" src="pictures/pizze/1.jpg"
+                    alt="wlo3" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">Hawajska</p>
+                  <p class="produkt-opis">
+                    Niby wszyscy hateują ale jak zaproponujesz kawałek to
+                    wezmą.
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">20 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- wloskie4 -->
+            <li id="wlo4" class="liWybor">
+              <div class="element">
+                <label for="wlo4"><img class="element-zdj" id="img-wlo4" src="pictures/makarony/carbonara.jpg"
+                    alt="wlo4" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">Carbonara</p>
+                  <p class="produkt-opis">
+                    Carbonara. Nie koniara, zodiakara czy jesieniara.
+                    Carbonara.
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">17 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- wloskie5 -->
+            <li id="wlo5" class="liWybor">
+              <div class="element">
+                <label for="wlo5"><img class="element-zdj" id="img-wlo5" src="pictures/makarony/carbonara.jpg"
+                    alt="wlo5" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">Makaron ze szpinakiem</p>
+                  <p class="produkt-opis">
+                    Dzieci często nie lubią ale według nas jest bardzo dobry i
+                    zdrowy.
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">19 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- wloskie6 -->
+            <li id="wlo6" class="liWybor">
+              <div class="element">
+                <label for="wlo6"><img class="element-zdj" id="img-wlo6" src="pictures/makarony/carbonara.jpg"
+                    alt="wlo6" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">Spaghetti bolognese</p>
+                  <p class="produkt-opis">
+                    Spaghetti jest dobre i smaczne nie wiem losowy opis
+                    zmienie to jeszcze.
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">18 zł</p>
+                </section>
+              </div>
+            </li>
+          </ul>
+
+          <!-- //////////// Azjatyckie //////////// -->
+
+          <ul id="azjatyckie" class="produkty">
+            <!-- azjatyckie1 -->
+            <li id="azj1" class="liWybor">
+              <div class="element">
+                <label for="azj1"><img class="element-zdj" id="img-azj1" src="pictures/azjatyckie/ramen.jpeg"
+                    alt="azj1" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">Naleśniki ryżowe z krewetkam</p>
+                  <p class="produkt-opis">
+                    Naleśniki. Ryżowe. Z krewetkam. Czego tu można nie
+                    rozumieć.
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">30 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- azjatyckie2 -->
+            <li id="azj2" class="liWybor">
+              <div class="element">
+                <label for="azj2"><img class="element-zdj" id="img-azj2" src="pictures/azjatyckie/ramen.jpeg"
+                    alt="azj2" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">Sajgonki</p>
+                  <p class="produkt-opis">Takie fajne, pyszne 8 sztuk.</p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">16 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- azjatyckie3 -->
+            <li id="azj3" class="liWybor">
+              <div class="element">
+                <label for="azj3"><img class="element-zdj" id="img-azj3" src="pictures/azjatyckie/ramen.jpeg"
+                    alt="azj3" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">Paluszki krabowe z sezamem</p>
+                  <p class="produkt-opis">
+                    Paluszki nie solone albo solone sami zdecydujecie.
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">36 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- azjatyckie4 -->
+            <li id="azj4" class="liWybor">
+              <div class="element">
+                <label for="azj4"><img class="element-zdj" id="img-azj4" src="pictures/azjatyckie/ramen.jpeg"
+                    alt="azj4" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">Sałatka warzywna z mięsem</p>
+                  <p class="produkt-opis">
+                    Zielone czyli zdrowe a do tego mięso. Normalnie jak u
+                    babci.
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">50 zł</p>
+                </section>
+              </div>
+            </li>
+            <!-- azjatyckie5 -->
+            <li id="azj5" class="liWybor">
+              <div class="element">
+                <label for="azj5"><img class="element-zdj" id="img-azj5" src="pictures/azjatyckie/ramen.jpeg"
+                    alt="azj5" /></label>
+                <section class="element-section">
+                  <p class="produkt-nazwa">Owoce morza w cieście</p>
+                  <p class="produkt-opis">
+                    Co to za głupoty przecież w morzu nie ma owoców. Bez
+                    sensu.
+                  </p>
+                </section>
+                <section class="element-section2">
+                  <p class="produkt-cena">12 zł</p>
+                </section>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-      <footer>
-        <p id="footer-p">&copy; Łukasz Wójcik 4B</p>
-      </footer>
-    </main>
-    <script src="main.js"></script>
-  </body>
+    </div>
+    <footer>
+      <p id="footer-p">&copy; Łukasz Wójcik 4B</p>
+    </footer>
+  </main>
+  <script src="main.js"></script>
+</body>
+
 </html>

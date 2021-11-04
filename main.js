@@ -135,10 +135,11 @@ function menuClick4() {
 
 // Dodanie  produktu do koszyka
 
-function dodajProdukt(a, b) {
+function dodajProdukt(a, b, c) {
   dodajElement();
   dodajZdjecie(a);
   dodajOpis(b);
+  dodajCene(c);
 }
 
 function dodajElement() {
@@ -149,8 +150,9 @@ function dodajElement() {
   div.appendChild(element);
 }
 
-// dodawanie rzeczy do elementu
+////////// dodawanie rzeczy do elementu
 
+//funkcie dodające zdjecie i opis
 function dodajZdjecie(a) {
   const zdjecie = document.createElement("img");
   zdjecie.classList.add("dodatki_box-produkty-element-zdjecie");
@@ -169,24 +171,63 @@ function dodajOpis(a) {
   div.appendChild(opis);
 }
 
-function wyswietl(a, b) {
-  document.querySelector("#dodatki").style.display = "flex";
-  dodajProdukt(a, b);
+function dodajCene(a) {
+  const box = document.createElement("div");
+  const cena = document.createElement("p");
+  box.classList.add("produkty-cenaBox");
+  cena.classList.add("produkty-cenaContent");
+
+  cena.innerText = a;
+  const div = document.querySelector(".dodatki_box-produkty");
+  div.appendChild(box);
+  box.appendChild(cena);
 }
 
-let elementZdj = document.querySelectorAll(".liWybor");
+// funkcja wyswietlanie okna
 
+function wyswietl(a, b, c) {
+  document.querySelector("#dodatki").style.display = "flex";
+  dodajProdukt(a, b, c);
+}
+
+// pobieranie elementow i wyśeitlanie okna
+let elementZdj = document.querySelectorAll(".liWybor");
 let zdjecia = document.querySelectorAll(".element-zdj");
 let tekst = document.querySelectorAll(".produkt-nazwa");
+let cena = document.querySelectorAll(".produkt-cena");
 
 for (let i = 0; i < elementZdj.length; i++) {
   elementZdj[i].addEventListener(
     "click",
     function () {
-      zdj1 = zdjecia[i].getAttribute("src");
-      tekst1 = tekst[i].innerHTML;
-      wyswietl(zdj1, tekst1);
+      let zdj = zdjecia[i].getAttribute("src");
+      let tek = tekst[i].innerHTML;
+      let cen = cena[i].innerHTML;
+      // let cenaV = cena[i].getAttribute("value");
+      wyswietl(zdj, tek, cen);
     },
     false
   );
 }
+
+// znikanie okna po kliknięciu na przycisk
+
+const szareTło = document.querySelector("#przyciski-wyjdz");
+
+function znikanie() {
+  document.querySelector("#dodatki").style.display = "none";
+}
+
+
+szareTło.addEventListener(
+  "click",
+  function () {
+    znikanie();
+
+    let usunElement = document.querySelector(".dodatki_box-produkty-element");
+    let usunElement2 = document.querySelector(".produkty-cenaBox");
+    usunElement.remove();
+    usunElement2.remove();
+  },
+
+);
