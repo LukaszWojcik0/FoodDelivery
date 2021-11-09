@@ -226,9 +226,13 @@ for (let i = 0; i < elementZdj.length; i++) {
 }
 
 function oblicz(a) {
+  let suma = parseInt(a);
+
   let o1 = 0;
   let opcja1 = document.querySelector("#dodatki_miesoBUR-input");
-  let suma = parseInt(a);
+
+  document.querySelector(".dodatki-box-podsumowanie-cena").innerHTML =
+    "Suma: " + suma + " zł";
 
   console.log(suma + " na początku");
   opcja1.addEventListener("change", function () {
@@ -237,8 +241,14 @@ function oblicz(a) {
       // console.log(o1);
       suma = suma + parseInt(o1);
       console.log(suma + "po o1");
+      document.querySelector(".dodatki_cena-o1").innerHTML = o1 + " zł";
+      document.querySelector(".dodatki-box-podsumowanie-cena").innerHTML =
+        "Suma: " + suma + " zł";
     } else {
       suma = suma - parseInt(o1);
+      document.querySelector(".dodatki_cena-o1").innerHTML = "-";
+      document.querySelector(".dodatki-box-podsumowanie-cena").innerHTML =
+        "Suma: " + suma + " zł";
       // suma = suma + parseInt(o2);
       // console.log(o1 + " o1");
     }
@@ -246,17 +256,27 @@ function oblicz(a) {
 
   let o2 = 0;
   let opcja2 = document.querySelector("#dodatki_serBUR-input");
+
   opcja2.addEventListener("change", function () {
     if (this.checked) {
       o2 = opcja2.getAttribute("value");
       // console.log(o2);
       suma = suma + parseInt(o2);
       console.log(suma + "po o2");
+      document.querySelector(".dodatki_cena-o2").innerHTML = o2 + " zł";
+      document.querySelector(".dodatki-box-podsumowanie-cena").innerHTML =
+        "Suma: " + suma + " zł";
     } else {
       suma = suma - parseInt(o2);
+      document.querySelector(".dodatki_cena-o2").innerHTML = "-";
+      document.querySelector(".dodatki-box-podsumowanie-cena").innerHTML =
+        "Suma: " + suma + " zł";
+
       // console.log(o2);
     }
   });
+  document.querySelector(".dodatki-box-podsumowanie-cena").innerHTML =
+    "Suma: " + suma + " zł";
 
   // console.log(suma + "na koncu");
   opcja1.addEventListener("change", function () {
