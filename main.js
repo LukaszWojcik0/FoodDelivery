@@ -133,13 +133,14 @@ function menuClick4() {
   menuClick(menu4);
 }
 
-// Dodanie  produktu do koszyka
+// Dodanie  produktu do wyboru dodatkow
 
-function dodajProdukt(a, b, c) {
+function dodajProdukt(a, b, c, d) {
   dodajElement();
   dodajZdjecie(a);
-  dodajOpis(b);
+  dodajNazwe(b);
   dodajCene(c);
+  dodajOpis(d);
 }
 
 function dodajElement() {
@@ -152,7 +153,7 @@ function dodajElement() {
 
 ////////// dodawanie rzeczy do elementu
 
-//funkcie dodające zdjecie i opis
+//funkcie dodające zdjecie, nazwe i opis
 function dodajZdjecie(a) {
   const zdjecie = document.createElement("img");
   zdjecie.classList.add("dodatki_box-produkty-element-zdjecie");
@@ -162,12 +163,21 @@ function dodajZdjecie(a) {
   div.appendChild(zdjecie);
 }
 
+function dodajNazwe(a) {
+  const nazwa = document.createElement("p");
+  nazwa.classList.add("dodatki_box-produkty-element-nazwa");
+
+  nazwa.innerText = a;
+  const div = document.querySelector(".dodatki_box-produkty-element");
+  div.appendChild(nazwa);
+}
+
 function dodajOpis(a) {
   const opis = document.createElement("p");
   opis.classList.add("dodatki_box-produkty-element-opis");
 
   opis.innerText = a;
-  const div = document.querySelector(".dodatki_box-produkty-element");
+  const div = document.querySelector(".dodatki_box-produkty-element-nazwa");
   div.appendChild(opis);
 }
 
@@ -185,15 +195,16 @@ function dodajCene(a) {
 
 // funkcja wyswietlanie okna
 
-function wyswietl(a, b, c) {
+function wyswietl(a, b, c, d) {
   document.querySelector("#dodatki").style.display = "flex";
-  dodajProdukt(a, b, c);
+  dodajProdukt(a, b, c, d);
 }
 
 // pobieranie elementow i wyśeitlanie okna
 let elementZdj = document.querySelectorAll(".liWybor");
 let zdjecia = document.querySelectorAll(".element-zdj");
 let tekst = document.querySelectorAll(".produkt-nazwa");
+let opis = document.querySelectorAll(".produkt-opis");
 let cena = document.querySelectorAll(".produkt-cena");
 let cenaValue = document.querySelectorAll(".produkt-cena");
 
@@ -204,9 +215,10 @@ for (let i = 0; i < elementZdj.length; i++) {
       let zdj = zdjecia[i].getAttribute("src");
       let tek = tekst[i].innerHTML;
       let cenTxt = cena[i].innerHTML;
+      let ops = opis[i].innerHTML;
       let cenValue = cenaValue[i].getAttribute("value");
       // let cenaV = cena[i].getAttribute("value");
-      wyswietl(zdj, tek, cenTxt);
+      wyswietl(zdj, tek, cenTxt, ops);
       oblicz(cenValue);
     },
     false

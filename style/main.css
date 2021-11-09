@@ -85,7 +85,7 @@ li {
   flex-direction: column;
 }
 
-.filtrowanieCena>label {
+.filtrowanieCena > label {
   padding: 0.5vw;
 }
 
@@ -110,7 +110,7 @@ li {
   flex-direction: column;
 }
 
-.produkty>li {
+.produkty > li {
   display: flex;
   justify-content: center;
   text-align: right;
@@ -161,7 +161,7 @@ li {
   width: 100%;
 }
 
-.element>label>img {
+.element > label > img {
   width: 100%;
   padding: 2%;
 
@@ -170,7 +170,7 @@ li {
   margin-left: 0.2vw;
 }
 
-.element>label {
+.element > label {
   width: 15%;
   text-decoration: none;
 }
@@ -222,17 +222,34 @@ li {
   height: 500px;
 }
 
-.dodatki_4burgery {
+.dodatki_class {
   padding: 1vw;
   display: flex;
   flex-direction: column;
 }
 
-
+/* //////////////////////// dodatki burgery //////////////////////// */
 #dodatki_bulka {
+  margin-bottom: 1.2vw;
+  font-size: 20px;
+  padding-left: 1vw;
+}
+
+.dodatki_bulka-label {
+  font-size: 22px;
+}
+
+.dodatki_miesoBUR {
+  font-size: 25px;
   margin-bottom: 1vw;
 }
 
+.dodatki_serBUR {
+  font-size: 25px;
+  margin-bottom: 1vw;
+}
+
+/* //////////////////////// dodatki ==== //////////////////////// */
 .dodatki_box-produkty-element {
   display: flex;
   background-color: #f2e205;
@@ -242,19 +259,25 @@ li {
 }
 
 .dodatki_box-produkty-element-zdjecie {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   /* background-color: yellowgreen; */
 }
 
-.dodatki_box-produkty-element-opis {
+.dodatki_box-produkty-element-nazwa {
   width: auto;
   /* background-color: red; */
-
+  font-size: 30px;
   font-family: "Dosis", sans-serif;
   font-weight: 600;
   margin-left: 1vw;
   padding-top: 1.5vw;
+}
+
+.dodatki_box-produkty-element-opis {
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .produkty-cenaBox {
@@ -268,9 +291,7 @@ li {
 
 .produkty-cenaContent {
   font-weight: 700;
-
 }
-
 
 .dodatki-box-przyciski {
   width: 100%;
@@ -289,7 +310,7 @@ li {
 
 /* jeśli chcesz więcej opcji wybooru, zmień szerokość li dla 
 klasy burgeryRow2 i usuń ten element z display none */
-.Row2>li {
+.Row2 > li {
   width: 25%;
 }
 
