@@ -297,9 +297,33 @@ function znikanie() {
 
 szareTło.addEventListener("click", function () {
   znikanie();
-
   let usunElement = document.querySelector(".dodatki_box-produkty-element");
   let usunElement2 = document.querySelector(".produkty-cenaBox");
   usunElement.remove();
   usunElement2.remove();
+
+  // kox usuwanie zaznaczonych rzeczy
+  let checkList = document.getElementsByTagName("input");
+  let addCena = document.querySelectorAll(".dodatki_cena-p");
+  for (let i = 0; i < checkList.length; i++) {
+    checkList[i].checked = false;
+    addCena[i].innerHTML = "-";
+  }
 });
+
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML =
+    "Latitude: " +
+    position.coords.latitude +
+    "<br>Longitude: " +
+    position.coords.longitude;
+}
