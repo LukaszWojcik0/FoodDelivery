@@ -54,6 +54,31 @@ li {
 }
 
 /* ////////////////KATEGORIE/////////////////// */
+
+#bur1,
+#bur2,
+#bur3,
+#bur4,
+#bur5,
+#keb1,
+#keb2,
+#keb3,
+#keb4,
+#keb5,
+#wlo1,
+#wlo2,
+#wlo3,
+#wlo4,
+#wlo5,
+#wlo6,
+#azj1,
+#azj2,
+#azj3,
+#azj4,
+#azj5 {
+  display: flex;
+}
+
 #kategorie {
   display: flex;
   width: 100%;
@@ -372,10 +397,13 @@ klasy burgeryRow2 i usuń ten element z display none */
 }
 
 footer {
+  position: fixed;
   width: 100%;
   display: flex;
   height: 3vw;
   background-color: #f2e852;
+  margin-top: 46vw;
+  border-top: 2px solid rgba(194, 194, 194, 0.685);
 }
 
 #footer-p {

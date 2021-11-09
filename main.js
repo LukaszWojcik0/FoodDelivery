@@ -311,19 +311,45 @@ szareTło.addEventListener("click", function () {
   }
 });
 
-var x = document.getElementById("demo");
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
+function sortujCena(a) {
+  let wartosc = document.querySelectorAll(".liWybor");
+  for (let i = 0; i < wartosc.length; i++) {
+    console.log(wartosc[i].value);
+    if (wartosc[i].value <= a) {
+      document.querySelectorAll(".liWybor")[i].style.display = "flex";
+    } else {
+      document.querySelectorAll(".liWybor")[i].style.display = "none";
+    }
   }
 }
 
-function showPosition(position) {
-  x.innerHTML =
-    "Latitude: " +
-    position.coords.latitude +
-    "<br>Longitude: " +
-    position.coords.longitude;
+function sortujReset() {
+  let wartosc = document.querySelectorAll(".liWybor");
+  for (let i = 0; i < wartosc.length; i++) {
+    document.querySelectorAll(".liWybor")[i].style.display = "flex";
+  }
 }
+
+document.querySelector("#cena0").addEventListener("click", function () {
+  sortujReset();
+});
+
+document.querySelector("#cena1").addEventListener("click", function () {
+  sortujReset();
+  sortujCena(15.0);
+});
+
+document.querySelector("#cena2").addEventListener("click", function () {
+  sortujReset();
+  sortujCena(25.0);
+});
+
+document.querySelector("#cena3").addEventListener("click", function () {
+  sortujReset();
+  sortujCena(35.0);
+});
+
+document.querySelector("#cena4").addEventListener("click", function () {
+  sortujReset();
+  sortujCena(45.0);
+});

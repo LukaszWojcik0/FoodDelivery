@@ -66,6 +66,10 @@
       </div>
     </section>
 
+    <footer>
+      <p id="footer-p">&copy; Łukasz Wójcik 4B</p>
+    </footer>
+
     <main>
       <nav class="nawigacja">
         <a href="index.html" id="nawigacja-a"
@@ -115,16 +119,16 @@
                 mniej</label
               >
               <label for="cena2"
-                ><input type="radio" name="cena" id="cena2" /> 15,00 zł - 25,00
-                zł</label
+                ><input type="radio" name="cena" id="cena2" /> 25,00 zł lub
+                mniej</label
               >
               <label for="cena3"
-                ><input type="radio" name="cena" id="cena3" /> 25,00 zł - 35,00
-                zł</label
+                ><input type="radio" name="cena" id="cena3" /> 35,00 zł lub
+                mniej</label
               >
               <label for="cena4"
-                ><input type="radio" name="cena" id="cena4" /> 35,00 zł lub
-                więcej</label
+                ><input type="radio" name="cena" id="cena4" /> 45,00 zł lub
+                mniej</label
               >
             </div>
           </aside>
@@ -132,7 +136,7 @@
             <!-- //////////// Burgery //////////// -->
             <ul id="burgery" class="produkty">
               <!-- burger1 -->
-              <li id="bur1" class="liWybor">
+              <li id="bur1" class="liWybor" value="25.00">
                 <label for="#img-bur1">
                   <div class="element">
                     <label for="bur1"
@@ -156,7 +160,7 @@
                 </label>
               </li>
               <!-- burger2 -->
-              <li id="bur2" class="liWybor">
+              <li id="bur2" class="liWybor" value="20.00">
                 <div class="element">
                   <label for="bur2"
                     ><img
@@ -178,7 +182,7 @@
                 </div>
               </li>
               <!-- burger3 -->
-              <li id="bur3" class="liWybor">
+              <li id="bur3" class="liWybor" value="28.00">
                 <div class="element">
                   <label for="bur3"
                     ><img
@@ -200,7 +204,7 @@
                 </div>
               </li>
               <!-- burger4 -->
-              <li id="bur4" class="liWybor">
+              <li id="bur4" class="liWybor" value="30.00">
                 <div class="element">
                   <label for="bur4"
                     ><img
@@ -222,7 +226,7 @@
                 </div>
               </li>
               <!-- burger5 -->
-              <li id="bur5" class="liWybor">
+              <li id="bur5" class="liWybor" value="22.00">
                 <div class="element">
                   <label for="bur5"
                     ><img
@@ -248,7 +252,7 @@
 
             <ul id="kebaby" class="produkty">
               <!-- kebab1 -->
-              <li id="keb1" class="liWybor">
+              <li id="keb1" class="liWybor" value="16.00">
                 <div class="element">
                   <label for="keb1"
                     ><img
@@ -267,7 +271,7 @@
                 </div>
               </li>
               <!-- kebab2 -->
-              <li id="keb2" class="liWybor">
+              <li id="keb2" class="liWybor" value="12.00">
                 <div class="element">
                   <label for="keb2"
                     ><img
@@ -288,7 +292,7 @@
                 </div>
               </li>
               <!-- kebab3 -->
-              <li id="keb3" class="liWybor">
+              <li id="keb3" class="liWybor" value="18.00">
                 <div class="element">
                   <label for="keb3"
                     ><img
@@ -307,7 +311,7 @@
                 </div>
               </li>
               <!-- kebab4 -->
-              <li id="keb4" class="liWybor">
+              <li id="keb4" class="liWybor" value="15.00">
                 <div class="element">
                   <label for="keb4"
                     ><img
@@ -326,7 +330,7 @@
                 </div>
               </li>
               <!-- kebab5 -->
-              <li id="keb5" class="liWybor">
+              <li id="keb5" class="liWybor" value="20.00">
                 <div class="element">
                   <label for="keb5"
                     ><img
@@ -352,7 +356,7 @@
 
             <ul id="wloskie" class="produkty">
               <!-- wloskie1 -->
-              <li id="wlo1" class="liWybor">
+              <li id="wlo1" class="liWybor" value="20.00">
                 <div class="element">
                   <label for="wlo1"
                     ><img
@@ -373,7 +377,7 @@
                 </div>
               </li>
               <!-- wloskie2 -->
-              <li id="wlo2" class="liWybor">
+              <li id="wlo2" class="liWybor" value="20.00">
                 <div class="element">
                   <label for="wlo2"
                     ><img
@@ -395,7 +399,7 @@
                 </div>
               </li>
               <!-- wloskie3 -->
-              <li id="wlo3" class="liWybor">
+              <li id="wlo3" class="liWybor" value="20.00">
                 <div class="element">
                   <label for="wlo3"
                     ><img
@@ -417,7 +421,7 @@
                 </div>
               </li>
               <!-- wloskie4 -->
-              <li id="wlo4" class="liWybor">
+              <li id="wlo4" class="liWybor" value="17.00">
                 <div class="element">
                   <label for="wlo4"
                     ><img
@@ -439,7 +443,7 @@
                 </div>
               </li>
               <!-- wloskie5 -->
-              <li id="wlo5" class="liWybor">
+              <li id="wlo5" class="liWybor" value="19.00">
                 <div class="element">
                   <label for="wlo5"
                     ><img
@@ -461,7 +465,7 @@
                 </div>
               </li>
               <!-- wloskie6 -->
-              <li id="wlo6" class="liWybor">
+              <li id="wlo6" class="liWybor" value="18.00">
                 <div class="element">
                   <label for="wlo6"
                     ><img
@@ -488,7 +492,7 @@
 
             <ul id="azjatyckie" class="produkty">
               <!-- azjatyckie1 -->
-              <li id="azj1" class="liWybor">
+              <li id="azj1" class="liWybor" value="30.00">
                 <div class="element">
                   <label for="azj1"
                     ><img
@@ -510,7 +514,7 @@
                 </div>
               </li>
               <!-- azjatyckie2 -->
-              <li id="azj2" class="liWybor">
+              <li id="azj2" class="liWybor" value="16.00">
                 <div class="element">
                   <label for="azj2"
                     ><img
@@ -529,7 +533,7 @@
                 </div>
               </li>
               <!-- azjatyckie3 -->
-              <li id="azj3" class="liWybor">
+              <li id="azj3" class="liWybor" value="36.00">
                 <div class="element">
                   <label for="azj3"
                     ><img
@@ -550,7 +554,7 @@
                 </div>
               </li>
               <!-- azjatyckie4 -->
-              <li id="azj4" class="liWybor">
+              <li id="azj4" class="liWybor" value="50.00">
                 <div class="element">
                   <label for="azj4"
                     ><img
@@ -572,7 +576,7 @@
                 </div>
               </li>
               <!-- azjatyckie5 -->
-              <li id="azj5" class="liWybor">
+              <li id="azj5" class="liWybor" value="12.00">
                 <div class="element">
                   <label for="azj5"
                     ><img
@@ -597,9 +601,6 @@
           </div>
         </div>
       </div>
-      <footer>
-        <p id="footer-p">&copy; Łukasz Wójcik 4B</p>
-      </footer>
     </main>
     <script src="main.js"></script>
   </body>
