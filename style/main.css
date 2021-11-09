@@ -34,10 +34,14 @@ li {
 
 #nawigacja-a {
   width: 5vw;
+  align-items: center;
 }
 
 #nawigacja-img {
-  height: 100%;
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 100%;
+  height: auto;
   display: flex;
 }
 
