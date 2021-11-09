@@ -197,8 +197,6 @@ let tekst = document.querySelectorAll(".produkt-nazwa");
 let cena = document.querySelectorAll(".produkt-cena");
 let cenaValue = document.querySelectorAll(".produkt-cena");
 
-
-
 for (let i = 0; i < elementZdj.length; i++) {
   elementZdj[i].addEventListener(
     "click",
@@ -219,39 +217,43 @@ function oblicz(a) {
   let o1 = 0;
   let opcja1 = document.querySelector("#dodatki_miesoBUR-input");
   let suma = parseInt(a);
+
   console.log(suma + " na początku");
-  opcja1.addEventListener('change', function () {
+  opcja1.addEventListener("change", function () {
     if (this.checked) {
       o1 = opcja1.getAttribute("value");
-      console.log(o1);
+      // console.log(o1);
       suma = suma + parseInt(o1);
       console.log(suma + "po o1");
     } else {
-      o1 = 0;
+      suma = suma - parseInt(o1);
       // suma = suma + parseInt(o2);
-      console.log(o1);
+      // console.log(o1 + " o1");
     }
-  })
+  });
 
   let o2 = 0;
   let opcja2 = document.querySelector("#dodatki_serBUR-input");
-  opcja2.addEventListener('change', function () {
+  opcja2.addEventListener("change", function () {
     if (this.checked) {
       o2 = opcja2.getAttribute("value");
-      console.log(o2);
+      // console.log(o2);
       suma = suma + parseInt(o2);
       console.log(suma + "po o2");
     } else {
-      o2 = 0;
-      console.log(o2);
+      suma = suma - parseInt(o2);
+      // console.log(o2);
     }
-  })
+  });
 
-
-  console.log(suma + "na koncu");
+  // console.log(suma + "na koncu");
+  opcja1.addEventListener("change", function () {
+    console.log(suma + "na koncu");
+  });
+  opcja2.addEventListener("change", function () {
+    console.log(suma + "na koncu");
+  });
 }
-
-
 
 // znikanie okna po kliknięciu na przycisk
 
@@ -261,16 +263,11 @@ function znikanie() {
   document.querySelector("#dodatki").style.display = "none";
 }
 
+szareTło.addEventListener("click", function () {
+  znikanie();
 
-szareTło.addEventListener(
-  "click",
-  function () {
-    znikanie();
-
-    let usunElement = document.querySelector(".dodatki_box-produkty-element");
-    let usunElement2 = document.querySelector(".produkty-cenaBox");
-    usunElement.remove();
-    usunElement2.remove();
-  },
-
-);
+  let usunElement = document.querySelector(".dodatki_box-produkty-element");
+  let usunElement2 = document.querySelector(".produkty-cenaBox");
+  usunElement.remove();
+  usunElement2.remove();
+});
