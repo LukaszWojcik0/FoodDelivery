@@ -400,7 +400,7 @@ footer {
   position: fixed;
   width: 100%;
   display: flex;
-  height: 3vw;
+  height: 5vw;
   background-color: #f2e852;
   margin-top: 47vw;
   border-top: 2px solid rgba(194, 194, 194, 0.685);
