@@ -220,6 +220,14 @@ for (let i = 0; i < elementZdj.length; i++) {
       // let cenaV = cena[i].getAttribute("value");
       wyswietl(zdj, tek, cenTxt, ops);
       oblicz(cenValue);
+
+      const burger = {
+        zdjecie: zdj,
+        tekst: tek,
+        cena: cenTxt,
+        cenaV: cenValue,
+      };
+      localStorage.setItem("aktualny", JSON.stringify(burger));
     },
     false
   );
@@ -353,3 +361,5 @@ document.querySelector("#cena4").addEventListener("click", function () {
   sortujReset();
   sortujCena(45.0);
 });
+
+localStorage.setItem("chuj", "chuj");

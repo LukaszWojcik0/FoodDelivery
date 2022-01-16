@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/pod.css" />
+  </head>
+
+  <body>
+    <main>
+      <nav class="nawigacja">
+        <a href="index.html" id="nawigacja-a"
+          ><img
+            id="nawigacja-img"
+            src="pictures/logo/LOGObetter.png"
+            alt="logo"
+        /></a>
+      </nav>
+
+      <div class="container">
+        <section class="koszyk">
+          <h1 class="koszykNaglowek">Twoje zamówienie:</h1>
+
+          <p class="koszykBlad">
+            Błąd: Najpierw złóż zamówienie&ThinSpace;<a href="index.html">
+              tutaj.</a
+            >
+          </p>
+          <section class="koszykContent"></section>
+        </section>
+      </div>
+
+      <footer class="foot">
+        <p id="foot-p">&copy; Łukasz Wójcik 4B</p>
+      </footer>
+    </main>
+  </body>
+  <script>
+    // Dodawanie produktu
+
+    function addProdukt(zdj, name, price) {
+      const zdjecie = document.createElement("img");
+      zdjecie.classList.add("ContentZdjecie");
+      zdjecie.src = zdj;
+
+      const nazwa = document.createElement("p");
+      nazwa.classList.add("ContentNazwa");
+      nazwa.innerText = name;
+
+      const cena = document.createElement("p");
+      cena.classList.add("ContentCena");
+      cena.innerText = price;
+
+      const kosz = document.querySelector(".koszykContent");
+      kosz.appendChild(zdjecie);
+      kosz.appendChild(nazwa);
+      kosz.appendChild(cena);
+    }
+
+    let a = "./pictures/pizze/1.jpg";
+    let b = "stinky cheese";
+
+    addProdukt(a, b, "25 zł");
+
+    //
+
+    const burger = JSON.parse(localStorage.getItem("aktualny"));
+    console.log(burger.cena);
+    console.log(burger.cenaV);
+
+    const { zdjecie, tekst, cena, cenaV } = burger;
+
+    console.log(zdjecie);
+
+    const el = document.createElement("div");
+    el.classList.add("div_test");
+
+    const nad = document.querySelector(".container");
+    nad.appendChild(el);
+  </script>
+</html>
